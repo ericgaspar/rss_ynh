@@ -136,8 +136,10 @@ pushd $final_path
 	php$phpversion artisan migrate --no-interaction --force
 	php$phpversion artisan storage:link
 	ynh_use_nodejs
-	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH npm install
-	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH NODE_ENV=production npm run build
+	npm install
+	npm run build
+	#ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH npm install
+	#ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH NODE_ENV=production npm run build
 popd
 
 # Set permissions to app files
