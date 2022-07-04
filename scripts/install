@@ -111,7 +111,7 @@ chown -R $app:www-data "$datadir"
 #=================================================
 # INSTALL LYCHEE WITH COMPOSER
 #=================================================
-ynh_script_progression --message="Installing BookStack with Composer..." --weight=10
+ynh_script_progression --message="Installing RSS with Composer..." --weight=10
 
 # Install composer
 ynh_install_composer
