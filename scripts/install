@@ -71,6 +71,8 @@ ynh_app_setting_set --app=$app --key=port --value=$port
 ynh_script_progression --message="Installing dependencies..." --time --weight=1
 
 ynh_install_app_dependencies $pkg_dependencies
+# Install Nodejs
+ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
 
 #=================================================
 # CREATE DEDICATED USER
@@ -155,6 +157,9 @@ pushd $final_path
 	php$phpversion artisan key:generate --no-interaction --force
 	php$phpversion artisan migrate --no-interaction --force
 	php$phpversion artisan storage:link
+	ynh_use_nodejs
+	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH npm install
+	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH NODE_ENV=production npm run build
 popd
 
 # Set permissions to app files

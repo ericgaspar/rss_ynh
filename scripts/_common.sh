@@ -4,6 +4,7 @@
 # COMMON VARIABLES
 #=================================================
 
+nodejs_version=16
 
 YNH_PHP_VERSION="8.0"
 
