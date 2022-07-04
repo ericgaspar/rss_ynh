@@ -36,6 +36,12 @@
                 "type": "domain"
             },
             {
+                "name": "path",
+                "type": "path",
+                "example": "/rss",
+                "default": "/rss"
+            },
+            {
                 "name": "is_public",
                 "type": "boolean",
                 "default": true
