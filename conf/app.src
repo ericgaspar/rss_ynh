@@ -1,5 +1,5 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/ssddanbrown/rss/archive/refs/tags/v1.0.1.tar.gz
+SOURCE_SUM=29e8531d675700893e01c78e2177d6ff15e05a6be9b360de812603ae5383b317
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
