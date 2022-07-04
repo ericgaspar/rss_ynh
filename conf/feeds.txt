@@ -12,3 +12,7 @@
 #https://example.com/feed-c.xml Blue_News[#0078b9] #news #blue
 
 https://www.lemonde.fr/blog/binaire/feed/ Binaire
+
+http://feeds.feedburner.com/dezeen?format=xml Dezeen
+
+https://images.math.cnrs.fr/spip.php?page=backend Images_des_mathématiques
