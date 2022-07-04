@@ -125,7 +125,6 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="../conf/.env" --destination="$final_path/.env"
 
-
 #=================================================
 # FINAL BOOKSTACK INSTALL
 #=================================================
@@ -138,8 +137,6 @@ pushd $final_path
 	ynh_use_nodejs
 	ynh_exec_warn_less npm install
 	ynh_exec_warn_less npm run build
-	#ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH npm install
-	#ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH NODE_ENV=production npm run build
 popd
 
 # Set permissions to app files
