@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/ssddanbrown/rss/archive/refs/tags/v1.0.1.tar.gz
-SOURCE_SUM=29e8531d675700893e01c78e2177d6ff15e05a6be9b360de812603ae5383b317
+SOURCE_URL=https://github.com/ssddanbrown/rss/archive/refs/tags/v1.0.3.tar.gz
+SOURCE_SUM=b21128a741dda09ae7fd634d68ebd6c29ee36621464d71bb6ab862835585f414
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
