@@ -6,7 +6,7 @@
         "en": "Simple RSS feed aggregator",
         "fr": "Simple RSS feed aggregator"
     },
-    "version": "1.0.1~ynh1",
+    "version": "1.0.3~ynh1",
     "url": "https://example.com",
     "upstream": {
         "license": "MIT",
