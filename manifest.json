@@ -3,8 +3,8 @@
     "id": "rss",
     "packaging_format": 1,
     "description": {
-        "en": "Simple, opinionated, RSS feed aggregator.",
-        "fr": "Simple, opinionated, RSS feed aggregator."
+        "en": "Simple, opinionated, RSS feed aggregator",
+        "fr": "Simple, opinionated, RSS feed aggregator"
     },
     "version": "1.0.1~ynh1",
     "url": "https://example.com",

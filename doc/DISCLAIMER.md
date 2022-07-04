@@ -1,12 +1,20 @@
-* Any known limitations, constrains or stuff not working, such as (but not limited to):
-    * requiring a full dedicated domain ?
-    * architectures not supported ?
-    * not-working single-sign on or LDAP integration ?
-    * the app requires an important amount of RAM / disk / .. to install or to work properly
-    * etc...
+### Feed Configuration
 
-* Other infos that people should be aware of, such as:
-    * any specific step to perform after installing (such as manually finishing the install, specific admin credentials, ...)
-    * how to configure / administrate the application if it ain't obvious
-    * upgrade process / specificities / things to be aware of ?
-    * security considerations ?
+Feed configuration is handled by a plaintext file on the host system. By default, using our docker image, this configuration would be located in a `feeds.txt` file within the path you mounted to /app/storage.
+
+The format of this file can be seen below:
+
+```
+https://feed.url.com/feed.xml feed-name #tag-a #tag-b
+https://example.com/feed.xml Example #updates #news
+
+# Lines starting with a hash are considered comments.
+# Empty lines are fine and will be ignored.
+
+# Underscores in names will be converted to spaces.
+https://example.com/feed-b.xml News_Site #news
+
+# Feed color can be set using square brackets after the name.
+# The color must be a CSS-compatible color value.
+https://example.com/feed-c.xml Blue_News[#0078b9] #news #blue
+```
