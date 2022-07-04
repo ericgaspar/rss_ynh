@@ -2,8 +2,16 @@ Some long and extensive description of what the app is and does, lorem ipsum dol
 
 ### Features
 
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+The following features are built into the application:
+
+- Supports RSS and ATOM formats.
+- Regular auto-fetching of RSS feeds.
+        Every hour by default, configurable down to 5 mins.
+- Custom feed names and colors.
+- Feed-based tags for categorization.
+- 3 different post layout modes (card, list, compact).
+- Fetching of page open-graph images.
+- Feeds managed via a single plaintext file.
+- System-based dark/light theme.
+- Post title/description search.
+- Mobile screen compatible.
